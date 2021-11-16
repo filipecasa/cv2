@@ -1,0 +1,86 @@
+body {
+    background-color: #EAF6F6;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 8px;
+    border-color: lightgrey;
+    width: 10%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    75% {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%
+    }
+}
+
+@keyframes shrink {
+    0% {
+        height: 600px;
+        width: 600px;
+    }
+    25% {
+        height: 500px;
+        width: 500px;
+    }
+    50% {
+        height: 400px;
+        width: 400px;
+    }
+    75% {
+        height: 300px;
+        width: 300px;
+    }
+    100% {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+p {
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+img {
+    animation-name: shrink;
+    animation-duration: 1s;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+
+h1 {
+    color: #66BFBF;
+}
+
+h3 {
+    color: #66BFBF;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+/************* HOVER *********/
+
+h1:hover, h3:hover, p:hover, td:hover, ul:hover {
+    color: darkblue;
+}
+
